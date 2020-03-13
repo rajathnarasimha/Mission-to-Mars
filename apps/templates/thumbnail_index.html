@@ -1,0 +1,31 @@
+<style>
+    img {
+      border: 1px solid #ddd; /* Gray border */
+      border-radius: 4px;  /* Rounded border */
+      padding: 5px; /* Some padding */
+      width: 150px; /* Set a small width */
+    }
+    
+    /* Add a hover effect (blue shadow) */
+    img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    }
+    </style>
+    <body>
+
+    <ul>
+            {% for link in items %}
+                <a href="{{ link }}">
+                <img src={{link}} alt="Thumbnails" class="img-thumbnail" alt="Thumbnails" class="img-thumbnail">
+                </a>
+            {% endfor %}
+    </ul>
+    
+     <!-- <a target="_blank" href="/Users/macuser/Documents/DataAnalysis/Mission-to-Mars/thumbnails/0.jpg"> 
+      <img src="https://astrogeology.usgs.gov/cache/images/7cf2da4bf549ed01c17f206327be4db7_valles_marineris_enhanced.tif_full.jpg" alt="Thumbnails" class="img-thumbnail">
+    </a>  -->
+    
+    <div class="alert alert-success" role="alert">
+        <a href="http://127.0.0.1:5000/" class="alert-link">homepage</a>. Click if you want to go back to homepage!
+      </div>
+    </body>
